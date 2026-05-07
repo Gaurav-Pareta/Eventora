@@ -65,3 +65,24 @@ exports.loginUser = async (req,res) => {
     })
 }
 
+// OTP Varification
+
+exports.verifyOtp = async (req,res) => {
+    const {email,otp} = req.body;
+
+    const otpRecord = await OTP.findOne({email,otp, action: "account_verification"});
+    if(!otpRecord){
+        return res.status(400).json({error: "Invalid or Expired OTP"});
+    }
+
+    const user = await User.findOneAndUpdate({email}, {isVarified: true});
+    await OTP.deleteMany({email, action: "account_verification"});
+    res.json({
+        message: "Account Verification Successfull.",
+        _id : user._id,
+        name: user.name,
+        role: user.role,
+        email: user.email,
+        token: generateToken(user._id, user.role)
+    });
+}
