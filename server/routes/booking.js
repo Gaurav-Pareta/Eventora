@@ -1,0 +1,12 @@
+const express = require('express');
+const router = express.Router();
+const {protect, admin} = require("../middlewares/auth.js");
+const {bookEvent, sendBookingOTP, getMyBookings, confirmBooking, cancelBooking} = require('../controllers/bookingController.js');
+
+router.post('/', protect, bookEvent);
+router.post('/send-otp', protect, sendBookingOTP);
+router.get('/myBooking', protect, getMyBookings);
+router.put('/:id/confirm', protect, admin, confirmBooking)
+router.delete('/:id', protect, cancelBooking);
+
+module.exports = router;
