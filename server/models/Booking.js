@@ -22,7 +22,7 @@ const bookingSchema = new mongoose.Schema(
 
         paymentStatus: {
             type: String,
-            enum: ["Non_Paid", "Paid"],
+            enum: ["Pending", "Paid", "Failed"],
             default: "Non_Paid",
         },
 
