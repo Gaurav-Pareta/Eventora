@@ -107,7 +107,7 @@ const seedData = async () => {
                 category: "Tech",
                 totalSeats: 300,
                 availableSeats: 280,
-                imageURL: "https://images.unsplash.com/photo-1511578314322-379afb476865",
+                image: "https://images.unsplash.com/photo-1511578314322-379afb476865",
                 createdBy: adminUser._id,
             },
             {
@@ -119,7 +119,7 @@ const seedData = async () => {
                 category: "Tech",
                 totalSeats: 200,
                 availableSeats: 190,
-                imageURL: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+                image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
                 createdBy: adminUser._id,
             },
             {
@@ -131,7 +131,7 @@ const seedData = async () => {
                 category: "Business",
                 totalSeats: 150,
                 availableSeats: 130,
-                imageURL: "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
+                image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
                 createdBy: adminUser._id,
             },
             {
@@ -143,7 +143,7 @@ const seedData = async () => {
                 category: "Music",
                 totalSeats: 500,
                 availableSeats: 420,
-                imageURL: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a",
+                image: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a",
                 createdBy: adminUser._id,
             },
             {
@@ -155,7 +155,7 @@ const seedData = async () => {
                 category: "Comedy",
                 totalSeats: 250,
                 availableSeats: 220,
-                imageURL: "https://images.unsplash.com/photo-1527224857830-43a7acc85260",
+                image: "https://images.unsplash.com/photo-1527224857830-43a7acc85260",
                 createdBy: adminUser._id,
             },
             {
@@ -167,7 +167,7 @@ const seedData = async () => {
                 category: "Sports",
                 totalSeats: 700,
                 availableSeats: 650,
-                imageURL: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+                image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
                 createdBy: adminUser._id,
             },
             {
@@ -179,7 +179,7 @@ const seedData = async () => {
                 category: "Business",
                 totalSeats: 180,
                 availableSeats: 170,
-                imageURL: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+                image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
                 createdBy: adminUser._id,
             },
             {
@@ -191,7 +191,7 @@ const seedData = async () => {
                 category: "Tech",
                 totalSeats: 220,
                 availableSeats: 200,
-                imageURL: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87",
+                image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87",
                 createdBy: adminUser._id,
             },
             {
@@ -203,7 +203,7 @@ const seedData = async () => {
                 category: "Education",
                 totalSeats: 120,
                 availableSeats: 100,
-                imageURL: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4",
+                image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4",
                 createdBy: adminUser._id,
             },
             {
@@ -215,7 +215,7 @@ const seedData = async () => {
                 category: "Sports",
                 totalSeats: 400,
                 availableSeats: 350,
-                imageURL: "https://images.unsplash.com/photo-1511512578047-dfb367046420",
+                image: "https://images.unsplash.com/photo-1511512578047-dfb367046420",
                 createdBy: adminUser._id,
             },
             {
@@ -227,7 +227,7 @@ const seedData = async () => {
                 category: "Tech",
                 totalSeats: 280,
                 availableSeats: 250,
-                imageURL: "https://images.unsplash.com/photo-1639762681057-408e52192e55",
+                image: "https://images.unsplash.com/photo-1639762681057-408e52192e55",
                 createdBy: adminUser._id,
             },
             {
@@ -239,7 +239,7 @@ const seedData = async () => {
                 category: "Other",
                 totalSeats: 600,
                 availableSeats: 520,
-                imageURL: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
+                image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
                 createdBy: adminUser._id,
             },
         ]);

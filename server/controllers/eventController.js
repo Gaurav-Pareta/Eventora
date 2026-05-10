@@ -44,7 +44,7 @@ const createEvent = async (req, res) => {
             category,
             totalSeats,
             availableSeats,
-            imageURL,
+            image,
         } = req.body;
 
         const event = await Event.create({
@@ -56,7 +56,7 @@ const createEvent = async (req, res) => {
             category,
             totalSeats,
             availableSeats,
-            imageURL,
+            image,
             createdBy: req.user._id,
         });
 

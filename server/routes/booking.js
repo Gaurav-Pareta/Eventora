@@ -1,12 +1,30 @@
-const express = require('express');
-const router = express.Router();
-const {protect, admin} = require("../middlewares/auth.js");
-const {bookEvent, sendBookingOTP, getMyBookings, confirmBooking, cancelBooking} = require('../controllers/bookingController.js');
+// routes/booking.js
 
-router.post('/', protect, bookEvent);
-router.post('/send-otp', protect, sendBookingOTP);
-router.get('/myBooking', protect, getMyBookings);
-router.put('/:id/confirm', protect, admin, confirmBooking)
-router.delete('/:id', protect, cancelBooking);
+const express = require("express");
+
+const router = express.Router();
+
+const { protect, admin } = require("../middlewares/auth");
+
+const {
+  sendBookingOTP,
+  bookEvent,
+  getMyBookings,
+  getAllBookings,
+  confirmBooking,
+  cancelBooking,
+} = require("../controllers/bookingController");
+
+router.post("/send-otp", protect, sendBookingOTP);
+
+router.post("/", protect, bookEvent);
+
+router.get("/my", protect, getMyBookings);
+
+router.get("/", protect, admin, getAllBookings);
+
+router.put("/:id/confirm", protect, admin, confirmBooking);
+
+router.delete("/:id", protect, cancelBooking);
 
 module.exports = router;

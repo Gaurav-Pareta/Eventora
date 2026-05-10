@@ -1,3 +1,5 @@
+// models/Booking.js
+
 const mongoose = require("mongoose");
 
 const bookingSchema = new mongoose.Schema(
@@ -16,14 +18,18 @@ const bookingSchema = new mongoose.Schema(
 
         status: {
             type: String,
-            enum: ["Pending", "Confirmed", "Cancelled"],
-            default: "Pending",
+            enum: [
+                "pending",
+                "confirmed",
+                "cancelled",
+            ],
+            default: "pending",
         },
 
         paymentStatus: {
             type: String,
-            enum: ["Pending", "Paid", "Failed"],
-            default: "Non_Paid",
+            enum: ["paid", "not_paid"],
+            default: "not_paid",
         },
 
         amount: {
@@ -36,6 +42,7 @@ const bookingSchema = new mongoose.Schema(
     }
 );
 
-const Booking = mongoose.model("Booking", bookingSchema);
-
-module.exports = Booking;
+module.exports = mongoose.model(
+    "Booking",
+    bookingSchema
+);
