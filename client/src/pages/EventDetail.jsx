@@ -85,7 +85,7 @@ const EventDetail = () => {
 
             setMessage(data.message);
 
-            navigate("/user-dashboard");
+            navigate("/dashboard");
         } catch (error) {
             setMessage(
                 error.response?.data?.message ||

@@ -62,7 +62,7 @@ exports.sendOtpEmail = async (email, otp , type) => {
                         </div>
 
                         <div style="background: #f9f9f9; padding: 15px; text-align: center; font-size: 12px; color: #999;">
-                            © 2026 Your App Name. All rights reserved.
+                            © 2026 Eventoira. All rights reserved.
                         </div>
 
                     </div>
@@ -167,7 +167,7 @@ exports.sendBookingConfirmationEmail = async (
                                 font-size: 15px;
                                 line-height: 1.6;
                             ">
-                                Thank you for booking with Eventoria
+                                Thank you for booking with Eventoira
                             </p>
 
                         </div>
