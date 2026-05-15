@@ -2,7 +2,7 @@
 
 const Booking = require("../models/Booking");
 const Event = require("../models/Event");
-const OTP = require("../models/Otp");
+const OTP = require("../models/temp");
 
 const {
   sendOtpEmail,
