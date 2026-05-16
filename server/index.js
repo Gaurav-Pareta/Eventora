@@ -16,7 +16,9 @@ app.use(
     })
 );
 app.use(express.json());
-
+app.get("/", (req, res) => {
+   res.send("Eventoria API Running");
+});
 app.use("/api/auth",authRoutes);
 app.use("/api/events",eventRoutes);
 app.use("/api/bookings",bookingRoutes);
